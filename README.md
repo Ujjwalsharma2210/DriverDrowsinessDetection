@@ -41,6 +41,6 @@ python drowsiness_detection.py
 
 ## Credits
 
-The Haar Cascade Algorithm implementation is based on this tutorial.
+The Haar Cascade Algorithm implementation is based on this tutorial.<br>
 [Eye blink detection with openCV, python and dlib](https://pyimagesearch.com/2017/04/24/eye-blink-detection-opencv-python-dlib/)<br>
 [Drowsiness detection with openCV](https://pyimagesearch.com/2017/05/08/drowsiness-detection-opencv/)
