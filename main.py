@@ -49,9 +49,11 @@ while(True):
     cv2.rectangle(frame, (0,height-50) , (200,height) , (0,0,0) , thickness=cv2.FILLED )
 
     for (x,y,w,h) in faces:
+        cv2.putText(frame, 'FACE', (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (100, 100, 100), 2)
         cv2.rectangle(frame, (x,y) , (x+w,y+h) , (100,100,100) , 1 )
 
     for (x,y,w,h) in right_eye:
+        cv2.putText(frame, 'RIGHT EYE', (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
         cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
         r_eye=frame[y:y+h,x:x+w]
         count=count+1
@@ -71,6 +73,7 @@ while(True):
         break
 
     for (x,y,w,h) in left_eye:
+        cv2.putText(frame, 'LEFT EYE', (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)
         cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 0, 255), 2)
         l_eye=frame[y:y+h,x:x+w]
         count=count+1
@@ -101,7 +104,7 @@ while(True):
     if(score<0):
         score=0   
     cv2.putText(frame,'Score:'+str(score),(100,height-20), font, 1,(255,255,255),1,cv2.LINE_AA)
-    if(score>10):
+    if(score>6):
         #person is feeling sleepy so we beep the alarm
         cv2.imwrite(os.path.join(path,'image.jpg'),frame)
         try:
