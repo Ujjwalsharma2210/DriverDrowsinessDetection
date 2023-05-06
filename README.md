@@ -28,13 +28,13 @@ pip install opencv-python numpy
 1. Navigate to the project directory:
 
 ```bash
-cd "folder-name"
+cd "DriverDrowsinessDetection"
 ```
 
 2. Run the program:
 
 ```bash
-python drowsiness_detection.py
+python3 main.py
 ```
 
 3. The program will open your default camera and start detecting your eyes. If your eyes are closed for more than a certain duration, an alarm will be raised to alert you.
