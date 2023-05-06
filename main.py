@@ -9,13 +9,13 @@ import time
 mixer.init()
 sound = mixer.Sound('alarm.wav')
 
-# face = cv2.CascadeClassifier('cascades\haarcascade_frontalface_alt.xml')
-# leye = cv2.CascadeClassifier('cascades\haarcascade_lefteye_2splits.xml')
-# reye = cv2.CascadeClassifier('cascades\haarcascade_righteye_2splits.xml')
+face = cv2.CascadeClassifier('cascades/haarcascade_frontalface_alt.xml')
+leye = cv2.CascadeClassifier('cascades/haarcascade_lefteye_2splits.xml')
+reye = cv2.CascadeClassifier('cascades/haarcascade_righteye_2splits.xml')
 
-face = cv2.CascadeClassifier('/Users/ujjwalsharma/code/python/drowDetec/cascades/haarcascade_frontalface_alt.xml')
-leye = cv2.CascadeClassifier('/Users/ujjwalsharma/code/python/drowDetec/cascades/haarcascade_lefteye_2splits.xml')
-reye = cv2.CascadeClassifier('/Users/ujjwalsharma/code/python/drowDetec/cascades/haarcascade_righteye_2splits.xml')
+# face = cv2.CascadeClassifier('/Users/ujjwalsharma/code/python/drowDetec/cascades/haarcascade_frontalface_alt.xml')
+# leye = cv2.CascadeClassifier('/Users/ujjwalsharma/code/python/drowDetec/cascades/haarcascade_lefteye_2splits.xml')
+# reye = cv2.CascadeClassifier('/Users/ujjwalsharma/code/python/drowDetec/cascades/haarcascade_righteye_2splits.xml')
 
 '''
 /Users/ujjwalsharma/code/python/drowDetec/cascades/haarcascade_frontalface_alt.xml
